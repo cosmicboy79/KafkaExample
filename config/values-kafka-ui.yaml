@@ -1,0 +1,12 @@
+yamlApplicationConfig:
+  auth:
+    type: disabled
+  management:
+    health:
+      ldap:
+        enabled: false
+  kafka:
+    clusters:
+      - name: local-kafka-controller-0
+        bootstrapServers: local-kafka-broker-controller-0.local-kafka-broker-controller-headless.mykafka.svc.cluster.local:9092
+        schemaRegistry: http://local-schema-registry.mykafka.svc.cluster.local:8081
