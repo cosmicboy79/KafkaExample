@@ -105,9 +105,9 @@ yamlApplicationConfig:
         enabled: false
   kafka:
     clusters:
-      - name: <Kafka Broker>-0
-        bootstrapServers: <Kafka Broker>-0.<Kafka Broker>-headless.<namespace>.svc.cluster.local:9092
-        schemaRegistry: http://<Schema Registry>.<namespace>.svc.cluster.local:8081
+      - name: <kafka broker name>-controller-0
+        bootstrapServers: <kafka broker name>-controller-0.<kafka broker name>-headless.<namespace>.svc.cluster.local:9092
+        schemaRegistry: http://<schema registry name>.<namespace>.svc.cluster.local:8081
 ```
 
 For the sake of this project, it is configured to use the Kafka Broker and Schema Registry
