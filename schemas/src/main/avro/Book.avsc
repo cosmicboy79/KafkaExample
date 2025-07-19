@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "name": "Book",
+    "namespace": "edu.example.kafka.avro",
+    "fields": [
+      {
+        "name": "author",
+        "type": "string"
+      },
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "genre",
+        "type": "string"
+      },
+      {
+        "name": "numberOfPages",
+        "type": "int"
+      }
+    ]
+}
