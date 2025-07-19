@@ -47,7 +47,7 @@ listeners:
     protocol: PLAINTEXT
 ```
 
-This configuration is already to be found in `config/values-kafka-broker.yaml`, and by using it
+This configuration is already to be found in [config/values-kafka-broker.yaml](config/values-kafka-broker.yaml), and by using it
 the Kafka Broker can be installed with the following command:
 
 ```bash
@@ -68,7 +68,7 @@ externalKafka:
 ```
 
 For the sake of this project, it is configured to use the Kafka Broker installed in the previous step. This
-configuration is already to be found in `config/values-schema-registry.yaml`, and by using it
+configuration is already to be found in [config/values-schema-registry.yaml](config/values-schema-registry.yaml), and by using it
 the Schema Registry can be installed with the following command:
 
 ```bash
@@ -112,7 +112,7 @@ yamlApplicationConfig:
 
 For the sake of this project, it is configured to use the Kafka Broker and Schema Registry
 installed in the previous steps. This configuration is already to be found in
-`config/values-kafka-ui.yaml`, and by using it the Kafka UI can be installed with the following command:
+[config/values-kafka-ui.yaml](config/values-kafka-ui.yaml), and by using it the Kafka UI can be installed with the following command:
 
 ```bash
 helm install --namespace mykafka -f config/values-kafka-ui.yaml local-kafka-ui kafka-ui/kafka-ui
